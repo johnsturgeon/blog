@@ -1,18 +1,17 @@
 ---
-layout: single
 title:  "FastAPI: Writing a FIFO queue with asyncio.Queue"
 date:   2022-12-10 08:31:32 -0800
 categories: python asyncio fastapi
 toc: true
 ---
 ### Summary
-In this quick post I'm going to describe how to use [asyncio.Queue](https://docs.python.org/3/library/asyncio-queue.html)
+In this quick post I'm going to describe how to use [asyncio.Queue](https://docs.python.org/3/library/asyncio-queue.html){:target="_blank"}
 in a FastAPI server for processing incoming requests in the background, and in the order that they
 were received.
 
 ### Background
 
-I am in the process of writing a [plugin for BakkesMod](https://github.com/johnsturgeon/stat-scraper) 
+I am in the process of writing a [plugin for BakkesMod](https://github.com/johnsturgeon/stat-scraper){:target="_blank"}
 (Rocket League) to collect game stats.
 
 It pushes game data rapidly to a FastAPI web server.  The problem was that some tasks were being 
@@ -21,11 +20,11 @@ issues with old data sometimes overwriting newer data.
 
 ### Things I tried
 
-I tried using [FastAPI's BackgroundTasks](https://fastapi.tiangolo.com/tutorial/background-tasks/) but I quickly 
-discovered that those just throw the task into the background and run it immediately, and if a second
+I tried using [FastAPI's BackgroundTasks](https://fastapi.tiangolo.com/tutorial/background-tasks/){:target="_blank"},
+but I quickly discovered that those just throw the task into the background and run it immediately, and if a second
 request came in, it would immediately start that background task even if the first one wasn't complete.
 
-I thought of writing my own queue manager so I could just run the tasks one at a time, but surely that had
+I thought of writing my own queue manager, so I could just run the tasks one at a time, but surely that had
 to already exist!
 
 ### Enter `asyncio.Queue`
@@ -145,11 +144,11 @@ if __name__ == "__main__":
 
 ```
 
-Run your server, and hit the url: [http://localhost:8823/queue](http://localhost:8823/queue) three quick times:
+Run your server, and hit the url: [http://localhost:8823/queue](http://localhost:8000/queue){:target="_blank"} three quick times:
 
 output:
 
-```console
+```console  
 Starting DB Worker
 Queueing a job
 Got a job: (size of remaining queue: 0

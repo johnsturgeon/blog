@@ -19,8 +19,7 @@
 # in the templates via {{ site.myvariable }}.
 
 title: John Sturgeon
-name: John Sturgeon
-subtitle: Working on way too many projects and hobbies, and making notes here along the way.
+subtitle: Thoughts and musings while working on projects.
 email: john.sturgeon@me.com
 description: >- # this means to ignore newlines until "baseurl:"
   Retired software engineer, contributor to open source projects when I can.
@@ -36,6 +35,34 @@ minimal_mistakes_skin: "default"
 plugins:
   - jekyll-feed
 
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      show_date: true
+
+
+author:
+  name: "John Sturgeon"
+  avatar: "/assets/images/bio-photo.png"
+  bio: "Retired software engineer, contributor to open source projects when I can.
+  Working on way too many projects and hobbies, and making notes here along the way." # Note: Markdown is allowed
+  location: "Pacific Northwest"
+  links:
+    - label: "Mastodon"
+      icon: "fab fa-fw fa-mastodon"
+      url: "https://pdx.social/@johnsturgeon"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/johnsturgeon"
+    - label: "Reddit"
+      icon: "fab fa-fw fa-reddit"
+      url: "https://www.reddit.com/user/johnsturgeon"
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
