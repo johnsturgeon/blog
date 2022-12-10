@@ -144,7 +144,7 @@ if __name__ == "__main__":
 
 ```
 
-Run your server, and hit the url: [http://localhost:8823/queue](http://localhost:8000/queue){:target="_blank"} three quick times:
+Run your server, and hit the url: [http://localhost:8000/queue](http://localhost:8000/queue){:target="_blank"} three quick times:
 
 output:
 
