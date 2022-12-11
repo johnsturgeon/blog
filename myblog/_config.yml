@@ -52,7 +52,6 @@ author:
   avatar: "/assets/images/bio-photo.png"
   bio: "Retired software engineer, contributor to open source projects when I can.
   Working on way too many projects and hobbies, and making notes here along the way." # Note: Markdown is allowed
-  location: "Pacific Northwest"
   links:
     - label: "Mastodon"
       icon: "fab fa-fw fa-mastodon"

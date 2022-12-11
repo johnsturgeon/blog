@@ -1,0 +1,26 @@
+<!-- Open Graph ---->
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="John Sturgeon">
+<meta property="og:locale" content="en_US">
+<meta property="og:title"   content="{{ page.title }}">
+<meta property="og:url"   content="{{ site.url }}{{ page.url }}">
+
+
+{% if page.summary %}
+<meta property="og:description" content="{{ page.summary }}">
+{% else %}
+<meta property="og:description" content="{{ site.description }}">
+{% endif %}
+
+
+{% if page.largeimage %}
+<meta property="og:image" content="{{ site.url }}{{ page.largeimage }}">
+{% else %}
+{% if page.image %}
+<meta property="og:image" content="{{ site.url }}{{ page.image }}">
+{% else %}
+<meta property="og:image" content="{{ site.url }}{{ site.author.avatar }}">
+{% endif %}
+{% endif %}
+<!-- end open graph -->
