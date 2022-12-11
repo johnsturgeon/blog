@@ -1,8 +1,8 @@
 ---
 title:  "FastAPI: Writing a FIFO queue with asyncio.Queue"
-summary: I show how to use asyncio.Queue in a FastAPI server for processing incoming requests in the background, and in the order that they were received.
 date:   2022-12-10 08:31:32 -0800
 categories: python asyncio fastapi
+description: How to use asyncio.Queue in FastAPI
 toc: true
 ---
 {% include card.html %}
