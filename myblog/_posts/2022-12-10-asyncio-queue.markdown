@@ -66,7 +66,7 @@ async def fifo_worker():
     print("Starting DB Worker")
     while True:
         job = await app.fifo_queue.get()
-        print(f"Got a job: (size of remaining queue: {app.fifo_queue.qsize()}")
+        print(f"Got a job: (size of remaining queue: {app.fifo_queue.qsize()})")
         await job()
 ```
 
@@ -119,7 +119,7 @@ async def fifo_worker():
     print("Starting DB Worker")
     while True:
         job = await app.fifo_queue.get()
-        print(f"Got a job: (size of remaining queue: {app.fifo_queue.qsize()}")
+        print(f"Got a job: (size of remaining queue: {app.fifo_queue.qsize()})")
         await job()
 
 
@@ -153,15 +153,15 @@ output:
 ```console  
 Starting DB Worker
 Queueing a job
-Got a job: (size of remaining queue: 0
+Got a job: (size of remaining queue: 0)
 in a slow task
 Queueing a job
 Queueing a job
 done with slow thing
-Got a job: (size of remaining queue: 1
+Got a job: (size of remaining queue: 1)
 in a slow task
 done with slow thing
-Got a job: (size of remaining queue: 0
+Got a job: (size of remaining queue: 0)
 in a slow task
 done with slow thing
 ```
