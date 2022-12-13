@@ -1,3 +1,9 @@
 main:
   - title: "Github Profile"
     url: https://github.com/johnsturgeon
+  - title: "Categories"
+    url: /categories/
+  - title: "Tags"
+    url: /tags/
+  - title: "Years"
+    url: /archives/year/

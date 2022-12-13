@@ -25,15 +25,15 @@ description: >- # this means to ignore newlines until "baseurl:"
   Retired software engineer, contributor to open source projects when I can.
   Working on way too many projects and hobbies, and making notes here along the way.
 url: "https://johnsturgeon.ca" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: ""
 github_username:  johnsturgeon
 repository: johnsturgeon/blog
-
+include: ['_pages']
 # Build settings
 theme: minimal-mistakes-jekyll
 minimal_mistakes_skin: "default"
 plugins:
   - jekyll-feed
+  - jekyll-archives
 
 defaults:
   # _posts
@@ -45,8 +45,24 @@ defaults:
       author_profile: true
       read_time: true
       show_date: true
+      permalink: /:year/:month/:day/:title
+  - scope:
+      path: ""
+      type: tag
+    values:
+      author_profile: true
+  - scope:
+      path: ""
+      type: category
+    values:
+      author_profile: true
+  - scope:
+      path: ""
+      type: year
+    values:
+      author_profile: true
 
-
+og_image: /assets/images/bio-photo.png
 author:
   name: "John Sturgeon"
   avatar: "/assets/images/bio-photo.png"
@@ -62,6 +78,26 @@ author:
     - label: "Reddit"
       icon: "fab fa-fw fa-reddit"
       url: "https://www.reddit.com/user/johnsturgeon"
+
+#category_archive:
+#  type: jekyll-archives
+#  path: /categories/
+#tag_archive:
+#  type: jekyll-archives
+#  path: /tags/
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+    - year
+  layouts:
+    category: archive-taxonomy
+    tag: archive-taxonomy
+    year: archive-taxonomy
+  permalinks:
+    year: /archives/year/:year/
+    category: /categories/:name/
+    tag: /tags/:name/
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
