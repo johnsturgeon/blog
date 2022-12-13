@@ -1,6 +1,8 @@
 ---
 title: "Where to start?"
 date: "2004-05-12 16:00:00 -0800"
+description: First post 
+tags: hdtv
 ---
 
 Well,  
