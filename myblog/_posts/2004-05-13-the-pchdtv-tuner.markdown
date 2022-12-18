@@ -1,6 +1,8 @@
 ---
-title: "The pcHDTV Tuner"
-date: "2004-05-13"
+date: "2004-05-13 00:01:00 -0800"
+description: Great HDTV Tuner Card
+tags: hdtv mythtv
+categories: hdtv
 ---
 
 This tuner has been kind of a good news bad news thing. The good news is that the [pcHDTV HD-2000](http://www.pchdtv.com/) High Definition Television PC tuner was developed strictly for Linux. What that means is that support will be there. As most Linux users know, using products developed for windows can be dicey at best because the manufacturer's rarely support a Linux version of their drivers (with a few notable exceptions: nVidia being one). The bad news is that in order to install this thing, you have to patch the kernel and re-compile.  

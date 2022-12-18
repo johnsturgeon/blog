@@ -2,6 +2,7 @@
 title: "Enter the HTPC"
 date: "2004-05-12 17:00:00 -0800"
 description: I make the decision to build my own HTPC (using MythTV as the frontend) 
+categories: hdtv
 tags: hdtv mythtv
 ---
 
