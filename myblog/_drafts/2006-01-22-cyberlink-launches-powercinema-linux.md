@@ -1,0 +1,10 @@
+---
+title: "CyberLink launches PowerCinema Linux"
+date: "2006-01-22"
+---
+
+I'm going to have to give this a look. I'd like to do a feature comparison with MythTV, and if I get a chance to download it and give it a spin, I will.  
+  
+Link via :[Engadget](http://www.engadget.com/2006/01/21/cyberlink-launches-powercinema-linux/)
+
+Tags: [mythtv](http://technorati.com/tag/mythtv), [media-center](http://technorati.com/tag/media-center), [pvr](http://technorati.com/tag/pvr), [linux](http://technorati.com/tag/linux), [hdtv](http://technorati.com/tag/hdtv)
