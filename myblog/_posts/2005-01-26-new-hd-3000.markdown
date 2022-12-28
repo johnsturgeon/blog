@@ -1,6 +1,6 @@
 ---
 title: "New HD-3000"
-date: "2005-01-26"
+date: "2005-01-26 00:01:00 -0800"
 description: New HD Capture card HD-3000
 categories: hdtv
 tags: hdtv mythtv htpc
