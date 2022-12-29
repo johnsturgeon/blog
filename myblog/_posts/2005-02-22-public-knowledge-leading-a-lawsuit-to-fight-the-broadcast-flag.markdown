@@ -1,12 +1,13 @@
 ---
 title: "Public Knowledge leading a lawsuit to fight the Broadcast Flag"
 date: "2005-02-22"
+tags: hdtv
 ---
 
 With the deadline for the mandatory compliance with the broadcast flag looming, Public Knowledge is [filing a lawsuit](http://www.publicknowledge.org/issues/bfcase) fighting the flag. Here are a couple bullet points from their court challenge:  
 
 >   
-> The flag’s proponents portray it as a narrow mandate that will only prohibit illegal distribution of digital television content, but in fact it will do much more:  
+> 1. The flag’s proponents portray it as a narrow mandate that will only prohibit illegal distribution of digital television content, but in fact it will do much more:  
 > 
 >   
 > 2. the flag will impose significant strictures and constraints on the design of consumer-electronics and computer products — limitations that will diminish interoperability between new products and old ones, and that even pose interoperability problems among new devices; and  

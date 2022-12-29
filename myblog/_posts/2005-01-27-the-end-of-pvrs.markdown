@@ -3,7 +3,7 @@ title: "The end of PVR's?"
 date: "2005-01-27"
 description: Can Video on Demand take the DVR / PVR Crown?
 categories: hdtv
-tags: hdtv, dvr
+tags: hdtv dvr
 ---
 
 Stand up and take a bow Telesales Broadband (UK Broadband company), the company is investing £20 million in the development of TV-on-demand and personal video recorder (PVR) services in 2005. This appears to be a first step in TV-on-demand.
