@@ -1,9 +1,10 @@
 ---
 title: "Dvorak on MythTV"
 date: "2005-03-09"
+tags: mythtv
 ---
 
-John C. Dvorak has written a small bit on MythTV for pcmag.com. There's nothing earth shattering or revealing in his writings, but simply having Dvorak write about MythTV is yet another step bringing the 'future' technology to the masses.  
+John C. Dvorak has written a small bit on MythTV for pcmag.com. There's nothing earth-shattering or revealing in his writings, but simply having Dvorak write about MythTV is yet another step bringing the 'future' technology to the masses.  
 
 >   
 > [Opinion Column by PC Magazine: The Secret TV Revolution](http://www.pcmag.com/article2/0,1759,1763060,00.asp): "Everyone I know who has ever seen or played with MythTV wants it, but it's a do-it-yourself project and not for the timid. Eventually that will change as packagers appear and bundle prebuilt systems together.  

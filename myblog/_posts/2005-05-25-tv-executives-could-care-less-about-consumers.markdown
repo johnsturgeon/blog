@@ -1,6 +1,7 @@
 ---
 title: "TV Executives could care less about Consumers"
 date: "2005-05-25"
+tags: hdtv
 ---
 
 Edward Felton (Freedom to Tinker) has a blog entry about what the Television Network executives have to say about the Broadcast Flag, and how it can negatively impact device compatibility. To sum it up, Rick Lane, vice president of government affairs at News Corp. said: "Compatibility is not a goal". His comment was seconded by NBC Universal's Senior Counsel for Government Relations Alec French. From Ed Feltons blog:  

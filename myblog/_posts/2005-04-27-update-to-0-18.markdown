@@ -1,6 +1,7 @@
 ---
 title: "Update to 0.18"
-date: "2005-04-27"
+date: "2005-04-27 00:03:00 -0800"
+tags: mythtv
 ---
 
 I'm looking forward to getting some time to update from 0.17 to 0.18 of MythTV. Chris Pinkham updated some mythtranscode bits to help us pcHDTV folks.

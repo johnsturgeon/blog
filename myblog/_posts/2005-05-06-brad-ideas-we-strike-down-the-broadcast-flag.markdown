@@ -1,6 +1,7 @@
 ---
 title: "Brad Ideas: We strike down the broadcast flag!"
 date: "2005-05-06"
+tags: hdtv
 ---
 
 Happy Happy day! As Brad Templeton writes:  
@@ -11,6 +12,6 @@ Happy Happy day! As Brad Templeton writes:
   
 This is huge. I'm not quite sure that it's over yet. I'm inclined to think that there will be appeals, but at this point, things are looking up.  
   
-Congratulations, and thanks go to [Brad Templeton](http://ideas.4brad.com/) and [Wendy Seltzer](http://wendy.seltzer.org/blog/) (and all the other folks at the EFF who worked their tails off for this result).  
+Congratulations, and thanks go to [Brad Templeton](http://ideas.4brad.com/) and [Wendy Seltzer](http://wendy.seltzer.org/) (and all the other folks at the EFF who worked their tails off for this result).  
   
 Link:[Brad Ideas](http://ideas.4brad.com/)

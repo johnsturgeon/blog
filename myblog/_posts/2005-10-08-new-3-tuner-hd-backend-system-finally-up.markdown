@@ -1,6 +1,7 @@
 ---
 title: "New 3-tuner HD backend system finally up"
 date: "2005-10-08"
+tags: mythtv
 ---
 
 I've finally finished putting together my new backend system. I went slightly over my $1,000 budget, but was pretty close.  
