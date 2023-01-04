@@ -10,5 +10,3 @@ From the article:
 > Depending on the standard and the compression, HD video can require anywhere from 11 to 410 [gigabytes per hour of video](http://dw.com.com/redir?destUrl=http%3A%2F%2Fwww.microsoft.com%2Fwindows%2Fwindowsmedia%2Fhowto%2Farticles%2FUnderstandingHDFormats.aspx&siteId=3&oId=2100-1003-6044142&ontId=1001&lop=nl.ex). (1,000GB make up 1TB.)  
 
 A point of clarification is that broadcast HD will \*never\* be 410 GB/Hour.  That is a the requirement for completely uncompressed 10bit 1920x1080i 60fps 932Mbps video.  Trust me... that ain't gonna happen.  More realworld numbers are from 6-9 GBytes/hour depending on 720p, 1080i.  
-  
-Technorati Tags: [hdtv](http://technorati.com/tag/hdtv), [pvr](http://technorati.com/tag/pvr), [home theater](http://technorati.com/tag/home%20theater), [television](http://technorati.com/tag/television), [computers](http://technorati.com/tag/computers), [video](http://technorati.com/tag/video)

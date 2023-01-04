@@ -21,5 +21,3 @@ I'd love to see something like this come to the US, but there would have to be a
   
   
 Thoughts? Feel free to comment  
-  
-Technorati Tags: [pvr](http://technorati.com/tag/pvr), [tivo](http://technorati.com/tag/tivo), [dvr](http://technorati.com/tag/dvr), [television](http://technorati.com/tag/television), [media](http://technorati.com/tag/media)

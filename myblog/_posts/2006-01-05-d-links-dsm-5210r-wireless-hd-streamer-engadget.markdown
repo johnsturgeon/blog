@@ -13,4 +13,3 @@ I think the 'first' they're claiming is that the device is a Media server, as we
 
   
 Link: [Engadget](http://mediapcs.engadget.com/2006/01/05/d-links-dsm-5210r-wireless-hd-streamer/1#c899461)  
-Technorati tags: [hdtv](http://technorati.com/tag/hdtv):[streaming media](http://technorati.com/tag/streaming+media):[engadget](http://technorati.com/tag/engadget)

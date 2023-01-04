@@ -26,7 +26,3 @@ Here's a snippet from their newsletter:
   
 So folks, if you are interested in getting the details, hop on over to the [EFF](http://www.eff.org/) site and check out the [FAQ](http://www.eff.org/IP/DRM/Sony-BMG/).  
   
-  
-  
-  
-Technorati Tags: [sony](http://technorati.com/tag/sony), [rootkit](http://technorati.com/tag/rootkit), [eff](http://technorati.com/tag/eff), [lawsuit](http://technorati.com/tag/lawsuit), [drm](http://technorati.com/tag/drm), [digital rights](http://technorati.com/tag/digital%20rights),[](http://technorati.com/tag/)

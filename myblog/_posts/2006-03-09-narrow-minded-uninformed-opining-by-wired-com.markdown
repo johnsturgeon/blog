@@ -1,6 +1,7 @@
 ---
 title: "Narrow minded uninformed opining by wired.com"
 date: "2006-03-09"
+tags: mythtv
 ---
 
 The good folks at wired.com are becoming about as tech savvy as cnet. Maybe this is what happens when you get too big for your britches. The article "[_Build Your Own PVR, Then Trash It_](http://www.wired.com/news/technology/0,70328-0.html)"  
@@ -28,7 +29,4 @@ Want more? How about this gem:
 > recorder, which may or may not think your mp3 player or your second television is secure enough to access your own media.
 
   
-  
 Well.. I guess that's it... I'd better trash my MythTV system right now, because wired.com says so.  
-
-Tags: [hdtv](http://technorati.com/tag/hdtv), [wired](http://technorati.com/tag/wired), [linux](http://technorati.com/tag/linux), [mythtv](http://technorati.com/tag/mythtv), [htpc](http://technorati.com/tag/htpc), [pvr](http://technorati.com/tag/pvr), [dvr](http://technorati.com/tag/dvr), [tivo](http://technorati.com/tag/tivo), [mythtv](http://technorati.com/tag/mythtv)
