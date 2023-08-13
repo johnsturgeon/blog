@@ -1,4 +1,4 @@
----
+k/k/---
 date: "2004-05-13 00:01:00 -0800"
 description: Great HDTV Tuner Card
 tags: hdtv mythtv

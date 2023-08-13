@@ -1,6 +1,6 @@
 ---
 title:  "HDMI -> Channels DVR"
-date:   2023-08-13 13:07:00 -0800
+date:   2023-08-13 00:07:00 -0800
 categories: howto, channels, hdtv
 tags: channels dvr 
 description: How to capture HDMI output of Andoid TV for use in Channels DVR
