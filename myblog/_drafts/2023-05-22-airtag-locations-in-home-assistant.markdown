@@ -1,9 +1,10 @@
 ---
-title:  "HDMI -> Channels DVR"
-date:   2023-08-13 13:07:00 -0800
-categories: howto, channels, hdtv
-tags: channels dvr 
-description: How to capture HDMI output of Andoid TV for use in Channels DVR
+title:  "AirTag support in Home Assistant"
+date:   2023-05-22 8:07:00 -0800
+categories: howto, homeassistant
+tags: findmy mac airtag 
+description: How to send FindMy data (including airtags, and devices) fleto Home Assistant for 
+tracking
 toc: true
 ---
 ### Summary
