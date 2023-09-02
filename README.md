@@ -1,4 +1,4 @@
-# johnsturgeon.ca
+# johnsturgeon.me
 
 This contains the Jekyll files for my personal blog.
 
