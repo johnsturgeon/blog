@@ -62,7 +62,7 @@ defaults:
     values:
       author_profile: true
 
-og_image: /assets/images/bio-photo.png
+og_image: /assets/images/default-card.png
 author:
   name: "John Sturgeon"
   avatar: "/assets/images/bio-photo.png"
