@@ -1,6 +1,6 @@
 ---
 title:  "Making The Great Football Pool a turnkey product"
-date:   2024-01-11 00:10:00 -0800
+date:   2024-01-11 10:10:00 -0800
 categories: python, homelab, football, nfl
 tags: tgfp python
 description: Documenting my journey to productize my long time personal project the TGFP
