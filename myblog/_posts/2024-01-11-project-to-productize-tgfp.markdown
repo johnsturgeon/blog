@@ -5,6 +5,7 @@ categories: python, homelab, football, nfl
 tags: tgfp python
 description: Documenting my journey to productize my long time personal project the TGFP
 toc: true
+og_image: /assets/images/tgfp_1.png
 ---
 ## Summary
 I have been running a simple online "Pick 'em" style football pool for decades -- since 1995 -- and
