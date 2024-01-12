@@ -1,5 +1,5 @@
 ---
-title:  "Making The Great Football Pool a turnkey product"
+title:  "Making The Great Football Pool a Turnkey Product"
 date:   2024-01-11 10:10:00 -0800
 categories: python, homelab, football, nfl
 tags: tgfp python
