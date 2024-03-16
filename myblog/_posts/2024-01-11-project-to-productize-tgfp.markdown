@@ -60,7 +60,7 @@ The main challenges I see at this point to achieving my goals are:
 ## Conclusion
 
 Stay tuned for updates as I go through the process, and if you have any thoughts or questions feel
-free to connect with me on mastodon [https://pdx.social/@johnsturgeon](https://pdx.social/@johnsturgeon){:target="_blank"}, or create issues on github! 
+free to connect with me on mastodon [https://mastodon.social/@johnsturgeon](https://mastodon.social/@johnsturgeon){:target="_blank"}, or create issues on github! 
 
 
 

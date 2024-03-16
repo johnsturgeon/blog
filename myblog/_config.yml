@@ -71,7 +71,7 @@ author:
   links:
     - label: "Mastodon"
       icon: "fab fa-fw fa-mastodon"
-      url: "https://pdx.social/@johnsturgeon"
+      url: "https://mastodon.social/@johnsturgeon"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/johnsturgeon"
