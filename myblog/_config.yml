@@ -62,6 +62,7 @@ defaults:
     values:
       author_profile: true
 
+enable_copy_code_button: true
 og_image: /assets/images/default-card.png
 author:
   name: "John Sturgeon"
