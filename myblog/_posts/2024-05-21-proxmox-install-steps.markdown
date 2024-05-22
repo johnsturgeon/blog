@@ -6,7 +6,7 @@ tags: proxmox linux
 description: How to install Proxmox VE on to a Dell R430 Poweredge
 toc: true
 header:
-  og_image: /assets/images/beanie_odm.png
+  og_image: /assets/images/proxmox.png
 ---
 ### Summary
 
