@@ -14,7 +14,9 @@ I recently purchased a very used Dell R430 for use in my Homelab.  The idea is t
 
 
 
-# Install proxmox
+# Install Proxmox
+
+Proxmox is an excellent hypervisor which will allow me to run any VM or LXC (Linux Container) that I need to.
 
 * Download Proxmox VE ISO
 * Burn ISO to thumb drive (I used Balena etcher)
