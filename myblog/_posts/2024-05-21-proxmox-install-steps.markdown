@@ -23,11 +23,11 @@ Proxmox is an excellent hypervisor which will allow me to run any VM or LXC (Lin
 * Plug USB into front panel Dell R430
 * Start up
 * F11 to select "One shot boot front USB"
-* Install (I chose to format NVMe zfs RAID0, that will effect your boot config later)
+* Install (I chose to format ext4, if you choose zfs that will affect your boot config later)
 
 #  Clover Bootloader (for NVMe)
 
-* Somebody on the Proxmox Forum wrote an excellent overview of preparing the clover bootloader.[^1] 
+Somebody on the Proxmox Forum wrote an excellent overview of preparing the clover bootloader.[^1] 
   * Follow those^^ instructions for creating and using your CLOVER boot USB.
   * Then come back here.. you can see my notes below as I followed the process
 
@@ -43,13 +43,18 @@ $ fdisk -l | grep EFI
 $ blkid | grep nvme0n1p2
 /dev/nvme0n1p2: UUID="B41F-1C61" BLOCK_SIZE="512" TYPE="vfat" PARTUUID="0d05f343-cc10-414b-ba80-7d8ce4904353"
 
-# get your bootloader
+# get your bootloader (mine is 'proxmox grub')
 $ mkdir /drive
 $ mount /dev/nvme0n1p2 /drive
 $ find /drive -iname "*.efi"
-
-/drive/EFI/systemd/systemd-bootx64.efi # bootloader for zfs
-/drive/EFI/BOOT/BOOTX64.EFI
+/drive/EFI/proxmox/shimx64.efi
+/drive/EFI/proxmox/grubx64.efi # This one for me
+/drive/EFI/proxmox/mmx64.efi
+/drive/EFI/proxmox/fbx64.efi
+/drive/EFI/BOOT/fbx64.efi
+/drive/EFI/BOOT/grubx64.efi
+/drive/EFI/BOOT/mmx64.efi
+/drive/EFI/BOOT/BOOTx64.efi
 ```
 
 ## Update the config.plist file
@@ -80,13 +85,13 @@ Use the PARTUUID and the EFI PATH to the bootloader and update the `config.plist
       <array>
         <dict>
           <key>Path</key>
-          <string>\EFI\systemd\systemd-bootx64.efi</string>
+          <string>\EFI\proxmox\grubx64.efi</string>
           <key>Title</key>
           <string>Arch Linux</string>
           <key>Type</key>
           <string>Linux</string>
           <key>Volume</key>
-          <string>0D05F343-CC10-414B-BA80-7D8CE4904353</string>
+          <string>D124B653-7947-4049-A2D8-50875F58BEFE</string>
           <key>VolumeType</key>
           <string>Internal</string>
         </dict>
@@ -103,6 +108,10 @@ Use the PARTUUID and the EFI PATH to the bootloader and update the `config.plist
 
 If you want to confirm that your boot will be clean, go ahead and reboot now, and observe your restart process
 
-As a final 'cleanup' step prior to doing all of your Proxmox "First Time Install" things, I would recommend using the wonderful [proxmox VE Helper-Scripts | Scripts for Streamlining Your Homelab with Proxmox VE](https://helper-scripts.com/scripts?id=Proxmox+VE+Post+Install) script
+As a final 'cleanup' step prior to doing all of your Proxmox "First Time Install" things, I would recommend using the wonderful [proxmox VE Helper-Scripts - Scripts for Streamlining Your Homelab with Proxmox VE](https://helper-scripts.com/scripts?id=Proxmox+VE+Post+Install) script
+
+```bash
+bash -c "$(wget -qLO - https://github.com/tteck/Proxmox/raw/main/misc/post-pve-install.sh)"
+```
 
 [^1]: [Tutorial- bootable NVME install on old hardware made easy with pcie adapter and clover - Proxmox Support Forum](https://forum.proxmox.com/threads/bootable-nvme-install-on-old-hardware-made-easy-with-pcie-adapter-and-clover.78120/)
