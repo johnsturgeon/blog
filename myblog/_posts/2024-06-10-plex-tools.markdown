@@ -11,7 +11,7 @@ header:
 
 I've been migrating my Plex server to a new server and have found a ton of problems with my Plex Music Library, so I thought I'd write some tools to help me clean it up.
 
-# Introducing GoshDarned Plex Tools™
+# Introducing GoshDarned Plex Tools
 
 <img width="300" src="https://github.com/johnsturgeon/plex-tools/assets/9746310/0c42ce63-983b-43a6-8f2e-77338e204cba">
 
