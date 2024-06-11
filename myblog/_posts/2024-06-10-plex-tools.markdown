@@ -29,4 +29,4 @@ I also notice that sometimes the song that's played is NOT the same as the one P
 
 My next project will be a *'song metadata mismatch finder'* (name pending... lol)  I'm going to use the Shazam API to find a match for my songs, then compare the metadata to what is in plex.  I'm sure I'll find quite a few mis-matches.
 
-> **_NOTE:_** Please let me know if you have any issues, or what you might want to see for tools next!
+> **_NOTE:_** Please let me know if you have any issues, or what you might want to see for tools next by filing a GitHub Issue.
