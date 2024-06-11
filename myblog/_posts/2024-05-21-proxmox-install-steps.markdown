@@ -8,10 +8,7 @@ toc: true
 header:
   og_image: /assets/images/proxmox.png
 ---
-### Summary
-
 I recently purchased a very used Dell R430 for use in my Homelab.  The idea is to migrate the apps that I have running on various bits of hardware all over the place to one large server.  It has 2x Xeon processors w/12 cores each and 128GB of RAM, so it should do nicely.  Below I'll document each step through the process, for myself, as well as for anybody else who might come along.  I'll do my best to keep it updated.
-
 
 
 # Install Proxmox
@@ -108,10 +105,10 @@ Use the PARTUUID and the EFI PATH to the bootloader and update the `config.plist
 
 If you want to confirm that your boot will be clean, go ahead and reboot now, and observe your restart process
 
-As a final 'cleanup' step prior to doing all of your Proxmox "First Time Install" things, I would recommend using the wonderful [proxmox VE Helper-Scripts - Scripts for Streamlining Your Homelab with Proxmox VE](https://helper-scripts.com/scripts?id=Proxmox+VE+Post+Install) script
+As a final 'cleanup' step prior to doing all of your Proxmox "First Time Install" things, I would recommend using the wonderful [proxmox VE Helper-Scripts - Scripts for Streamlining Your Homelab with Proxmox VE](https://helper-scripts.com/scripts?id=Proxmox+VE+Post+Install){:target="_blank"} script
 
 ```bash
 bash -c "$(wget -qLO - https://github.com/tteck/Proxmox/raw/main/misc/post-pve-install.sh)"
 ```
 
-[^1]: [Tutorial- bootable NVME install on old hardware made easy with pcie adapter and clover - Proxmox Support Forum](https://forum.proxmox.com/threads/bootable-nvme-install-on-old-hardware-made-easy-with-pcie-adapter-and-clover.78120/)
+[^1]: [Tutorial- bootable NVME install on old hardware made easy with pcie adapter and clover - Proxmox Support Forum](https://forum.proxmox.com/threads/bootable-nvme-install-on-old-hardware-made-easy-with-pcie-adapter-and-clover.78120/){:target="_blank"}

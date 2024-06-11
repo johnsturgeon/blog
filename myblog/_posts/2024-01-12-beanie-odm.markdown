@@ -9,11 +9,9 @@ header:
   og_image: /assets/images/beanie_odm.png
 ---
 
-# Summary
+Update time!  I'm working on the task below to get things started:
 
-Update time!  I'm working on this tasks to get things started:
-
-GitHub: [Migrate models from homegrown PyMongo to Beanie](https://github.com/TheGreatFootballPool/tgfp-lib/issues/26)
+GitHub: [Migrate models from homegrown PyMongo to Beanie](https://github.com/TheGreatFootballPool/tgfp-lib/issues/26){:target="_blank"}
 
 
 I want to move from Flask to [FastAPI](https://fastapi.tiangolo.com/){:target="_blank"},

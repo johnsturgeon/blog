@@ -8,7 +8,7 @@ toc: true
 header:
   og_image: /assets/images/tgfp_1.png
 ---
-## Summary
+
 I have been running a simple online "Pick 'em" style football pool for decades -- since 1995 -- and
 it's been a source of enjoyment for my friends and family every year.  I thought it would be fun to
 make the project a 'white box' or 'turnkey' solution for other people who want to run their own
