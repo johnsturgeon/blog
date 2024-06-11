@@ -19,7 +19,7 @@ I've been migrating my Plex server to a new server and have found a ton of probl
 
 The first problem I had was a ton of songs that for one reason or another I had *exact* duplicate copies of in my library, so I wrote a tool to 'de-duplicate' the songs.
 
-[Read about it on GitHub here](https://github.com/johnsturgeon/plex-tools/blob/main/README.md){:target="_blank"}
+[Read about it on GitHub here](https://github.com/johnsturgeon/plex-tools){:target="_blank"}
 
 ## What's next?
 
