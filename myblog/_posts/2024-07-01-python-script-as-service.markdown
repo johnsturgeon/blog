@@ -10,7 +10,7 @@ header:
 ---
 
 If you have a long-running python script (for example a discord bot) that you want running continuously, this tutorial is for you.
-I will show you how to create a systemd service on your linux machine that supports systemd services.
+I will show you how to create a long-running python script on any linux machine that supports systemd services.
 
 If you don't know what systemd is, [this is a great overview](https://www.linux.com/training-tutorials/understanding-and-using-systemd/){:target="_blank"}
 
@@ -63,6 +63,7 @@ Description=Sync Minecraft World
 After=multi-user.target
 
 [Service]
+WorkingDirectory=/home/<username>/mcbackup
 Type=simple
 Restart=always
 ExecStart=/home/<username>/mcbackup/bin/python /home/<username>/mcbackup/sync-minecraft.py
