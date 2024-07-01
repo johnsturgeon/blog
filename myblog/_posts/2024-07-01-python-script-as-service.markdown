@@ -28,7 +28,7 @@ Set up the virtual environment and install `sync-folders`
 python3 -m venv mcbackup
 source mcbackup/bin/activate
 cd mcbackup
-pip install sync-folders
+pip install dirsync
 ```
 
 ### Long running python script
