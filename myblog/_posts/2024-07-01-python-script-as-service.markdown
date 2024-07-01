@@ -22,7 +22,7 @@ Let's go ahead and set up a virtual environment to run our folder syncing script
 
 ### Virtual Env and library
 
-Set up the virtual environment and install `sync-folders`
+Set up the virtual environment and install `dirsync`
 
 ```bash
 python3 -m venv mcbackup
