@@ -35,6 +35,10 @@ pip install sync-folders
 
 Now, let's write a simple long-running script for syncing our minecraft world for backup purposes
 
+```bash
+vi sync-minecraft.py
+```
+
 ```python
 from dirsync import sync
 import time
