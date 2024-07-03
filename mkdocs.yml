@@ -9,7 +9,6 @@ theme:
   name: material
   features:
     - navigation.indexes
-    - navigation.tabs
     - content.code.annotation
     - content.code.copy
   palette:
@@ -45,6 +44,8 @@ plugins:
       match_path: blog/posts/.*
       date_from_meta:
         as_creation: date
+  - tags:
+      tags_file: tags.md
 extra:
   social:
     - icon: fontawesome/brands/mastodon
@@ -58,6 +59,9 @@ extra:
       name: John's Reddit
 
 markdown_extensions:
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span

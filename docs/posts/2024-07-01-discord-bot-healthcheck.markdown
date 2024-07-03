@@ -49,7 +49,9 @@ Let's go through some easy steps for adding a background `@task` to your discord
 
 This tutorial assumes you know how to create a `discord.py` bot, so I'm not going to go through the steps necessary for creating your bot.  Let's just assume that you already have a bot and it's running.
 
-If you don't know how to create a discord bot, check out the guide: [How to Make a Discord Bot in Python](https://realpython.com/how-to-make-a-discord-bot-python/){:target="_blank"} by RealPython
+!!!info "Discord Bot Howto"
+
+    If you don't know how to create a discord bot, check out the guide: [How to Make a Discord Bot in Python](https://realpython.com/how-to-make-a-discord-bot-python/){:target="_blank"} by RealPython
 
 Below is an extremely simple discord bot (happens to be the example bot from discord.py docs):
 
@@ -64,7 +66,7 @@ intents.message_content = True
 
 client = discord.Client(intents=intents)
 
-BOT_TOKEN='MTI1NzQyNDkyNjY1MDkyOTI1Mg.GIObto.fn85xqqsB7gZdvLRfjmq5fElbuDFX78eJnIXw'
+BOT_TOKEN='Your Token Here'
 
 @client.event
 async def on_ready():
@@ -90,11 +92,11 @@ First thing we need to do is get the `requests` library
 pip install requests
 ```
 
-## Add a `@task`
+## Add a discord `@task`
 
-Code below adds the task which pings healthchecks
+==Highlighted== lines of code below add the task which pings healthchecks
 
-```python
+```python hl_lines="2 3 11 14-20 25-28"
 import discord
 from discord.ext import tasks
 import requests
@@ -105,8 +107,8 @@ intents.message_content = True
 
 client = discord.Client(intents=intents)
 
-HEALTHCHECK_URL="https://hc-ping.com/3f0f10e1-b622-40b7-b63d-f4bdbdd6399"
-BOT_TOKEN='MTI1NzQyNDkyNjY1MDkyOTI1Mg.GIObto.fn85xqqsB7gZdvLRfjmq5fElbuDFX78eJnIXw'
+HEALTHCHECK_URL='Your Healthcheck Ping URL Here'
+BOT_TOKEN='Your Token Here'
 
 @tasks.loop(minutes=30)
 async def ping_healthchecks():
@@ -119,7 +121,6 @@ async def ping_healthchecks():
 @client.event
 async def on_ready():
     print(f'We have logged in as {client.user}')
-
     # Ping once on startup
     await ping_healthchecks()
     ping_healthchecks.start()

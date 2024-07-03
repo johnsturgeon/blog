@@ -6,6 +6,4 @@ Retired software engineer, contributor to open source projects when I can. Worki
 
 ---
 
-## Recent Posts
-
 

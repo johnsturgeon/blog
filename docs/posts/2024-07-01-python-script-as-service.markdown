@@ -18,7 +18,10 @@ If you have a long-running python script (for example a discord bot) that you wa
 I will show you how to create a long-running python script on any linux machine that supports systemd services.
 
 <!-- more -->
-If you don't know what systemd is, [this is a great overview](https://www.linux.com/training-tutorials/understanding-and-using-systemd/){:target="_blank"}
+
+!!! info "Systemd Information"
+
+    If you don't know what systemd is, [this is a great overview](https://www.linux.com/training-tutorials/understanding-and-using-systemd/){:target="_blank"}
 
 Below, I'll run through a very simple example of script that syncs two folders every 30 seconds
 
@@ -104,7 +107,7 @@ sudo systemctl start mc-backup.service
 
 ### Additional info
 
-Now that you have the script running, you have several ways you can control the script using `systemd`
+Now that you have the script running, you have several ways you can control the script using `systemctl`
 
 Check the status:
 
