@@ -3,9 +3,7 @@ authors:
   - johnsturgeon
 categories:
   - Python
-  - Homelab
-  - Football
-  - Nfl
+  - TGFP
 date:
   created: 2024-01-11
 description: Documenting my journey to productize my long time personal project the
@@ -14,6 +12,8 @@ draft: true
 tags:
   - tgfp
   - python
+  - football
+  - fastapi
 ---
 
 # Making The Great Football Pool a Turnkey Product
@@ -23,22 +23,19 @@ it's been a source of enjoyment for my friends and family every year.  I thought
 make the project a 'white box' or 'turnkey' solution for other people who want to run their own
 friends and family football pool.
 
+<!-- more -->
+
 ## Quick technical overview
 
 It started out as CGI scripts and html forms where the data was saved in csv flat files.  Over the
 years, I've migrated the technology from CGI to PHP to Ruby on Rails and finally to Flask / MongoDB.
 
-The scores / odds / etc.. are fed via an undocumented API from ESPN.
-
-All my code is open-sourced and available on [GitHub](https://github.com/TheGreatFootballPool){:target="_blank"}
-
-Authentication is done through [Discord oath2](https://discord.com/developers/docs/topics/oauth2){:target="_blank"}.
-
-I use [Listmonk](https://listmonk.app/){:target="_blank"} for my email distribution list.
-
-I use [Prefect](https://www.prefect.io/){:target="_blank"} to host my 'secrets' and automate the workers.
-
-Everything is in Docker containers and hosted in my homelab
+* The scores / odds / etc.. are fed via an undocumented API from ESPN.
+* All my code is open-sourced and available on [GitHub](https://github.com/TheGreatFootballPool){:target="_blank"}
+* Authentication is done through [Discord oath2](https://discord.com/developers/docs/topics/oauth2){:target="_blank"}.
+* I use [Listmonk](https://listmonk.app/){:target="_blank"} for my email distribution list.
+* I use [Prefect](https://www.prefect.io/){:target="_blank"} to host my 'secrets' and automate the workers.
+* Everything is in Docker containers and hosted in my homelab
 
 ## The football pool itself
 
