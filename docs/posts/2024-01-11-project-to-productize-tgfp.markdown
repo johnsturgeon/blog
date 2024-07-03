@@ -8,7 +8,6 @@ date:
   created: 2024-01-11
 description: Documenting my journey to productize my long time personal project the
   TGFP
-draft: true
 tags:
   - tgfp
   - python
