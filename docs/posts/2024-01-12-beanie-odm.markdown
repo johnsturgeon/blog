@@ -7,7 +7,6 @@ categories:
 date:
   created: 2024-01-12
 description: I'm going to use Beanie ODM instead of home-grown ODM for the new TGFP
-draft: true
 tags:
   - tgfp
   - python
@@ -16,17 +15,13 @@ tags:
 
 # Using Beanie ODM
 
-Update time!  I'm working on the task below to get things started:
-
-GitHub: [Migrate models from homegrown PyMongo to Beanie](https://github.com/TheGreatFootballPool/tgfp-lib/issues/26){:target="_blank"}
-
-
 I want to move from Flask to [FastAPI](https://fastapi.tiangolo.com/){:target="_blank"},
 and on a few past projects, I've enjoyed FastAPI's native
 integration with Pydantic models.  Since I use MongoDB on the backend, I've also used 
 [Beanie ODM](https://github.com/roman-right/beanie){:target="_blank"}
 for persisting my models to my DB.
 
+<!-- more -->   
 As I move forward with this project I definitely want to have Administrator CRUD capabilities for
 user management.
 
