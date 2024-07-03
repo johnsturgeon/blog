@@ -4,19 +4,19 @@ authors:
 categories:
   - Howto
   - Proxmox
-  - Homelab
 date:
   created: 2024-05-21
 description: How to install Proxmox VE on to a Dell R430 Poweredge
-draft: true
 tags:
   - proxmox
+  - homelab
   - linux
 ---
 
 # Proxmox VE Install on Dell R430
 I recently purchased a very used Dell R430 for use in my Homelab.  The idea is to migrate the apps that I have running on various bits of hardware all over the place to one large server.  It has 2x Xeon processors w/12 cores each and 128GB of RAM, so it should do nicely.  Below I'll document each step through the process, for myself, as well as for anybody else who might come along.  I'll do my best to keep it updated.
 
+<!-- more -->
 
 # Install Proxmox
 
@@ -31,7 +31,8 @@ Proxmox is an excellent hypervisor which will allow me to run any VM or LXC (Lin
 
 #  Clover Bootloader (for NVMe)
 
-Somebody on the Proxmox Forum wrote an excellent overview of preparing the clover bootloader.[^1] 
+Somebody on the Proxmox Forum wrote an excellent overview of preparing the clover bootloader.[^1]
+
   * Follow those^^ instructions for creating and using your CLOVER boot USB.
   * Then come back here.. you can see my notes below as I followed the process
 
@@ -108,14 +109,18 @@ Use the PARTUUID and the EFI PATH to the bootloader and update the `config.plist
 
 * re-insert the USB drive and boot up the server 
 
-> NOTE: The first time you boot back up you will need to hit 'enter' on the clover boot screen so that it will remember to boot to that option the next time
+!!! warning
+
+    The first time you boot back up you will need to hit 'enter' on the clover boot screen so that it will remember to boot to that option the next time
 
 If you want to confirm that your boot will be clean, go ahead and reboot now, and observe your restart process
 
-As a final 'cleanup' step prior to doing all of your Proxmox "First Time Install" things, I would recommend using the wonderful [proxmox VE Helper-Scripts - Scripts for Streamlining Your Homelab with Proxmox VE](https://helper-scripts.com/scripts?id=Proxmox+VE+Post+Install){:target="_blank"} script
+!!! tip
 
-```bash
-bash -c "$(wget -qLO - https://github.com/tteck/Proxmox/raw/main/misc/post-pve-install.sh)"
-```
+    As a final 'cleanup' step prior to doing all of your Proxmox "First Time Install" things, I would recommend using the wonderful [proxmox VE Helper-Scripts - Scripts for Streamlining Your Homelab with Proxmox VE](https://helper-scripts.com/scripts?id=Proxmox+VE+Post+Install){:target="_blank"} script
+
+    ```bash
+    bash -c "$(wget -qLO - https://github.com/tteck/Proxmox/raw/main/misc/post-pve-install.sh)"
+    ```
 
 [^1]: [Tutorial- bootable NVME install on old hardware made easy with pcie adapter and clover - Proxmox Support Forum](https://forum.proxmox.com/threads/bootable-nvme-install-on-old-hardware-made-easy-with-pcie-adapter-and-clover.78120/){:target="_blank"}
