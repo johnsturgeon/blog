@@ -8,32 +8,34 @@ categories:
 date:
   created: 2023-08-13
 description: How to capture HDMI output of Android TV for use in Channels DVR
-draft: true
 tags:
   - channels
   - dvr
 ---
 
 # HDMI -> Channels DVR
+
 ## Summary
+
 DVRs have been around for a long time, but unfortunately streaming services have locked us in to 
 *their* cloud DVR solutions.  As a long time MythTV then [Channels DVR](https://getchannels.com){:target="_blank"}
 user I'm excited at the idea of being able to record content from various streaming services 
 that I subscribe to.  Primarily YouTube TV. 
 
+<!-- more -->
+
 ## Solution
 
-Thanks to the good folks over in the Channels DVR Community Forum, the solution I'm exploring today
-is using Android TV Streaming devices that output HDMI to 
-HDMI Capture / Encoding devices that capture then stream them over the network, those 
-streams can then be captured in Channels DVR as custom channels.
+Thanks to the good folks over in the Channels DVR Community Forum, the solution I'm exploring today is using Android TV Streaming devices that output HDMI to HDMI Capture / Encoding devices that capture then stream them over the network, those streams can then be captured in Channels DVR as custom channels.
 
 Thanks go to:
+
   * [bnhf](https://community.getchannels.com/u/bnhf){:target="_blank"} (Docker container author / tremendous help)
   * [KompilerDJ](https://community.getchannels.com/u/KompilerDJ){:target="_blank"} (Forked original solution, provider of many scripts / help)
   * [Aman](https://community.getchannels.com/u/tmm1){:target="_blank"} (Co-Founder of the Channels project and the one that started this thread)
 
 ## Help
+
 * If you need some help, or have corrections / suggestions for the steps below, please contact me
     * [John Sturgeon](https://community.getchannels.com/u/johnofcamas){:target="_blank"} at Mastodon
 * You can also:
@@ -41,52 +43,52 @@ Thanks go to:
     * If the thread is closed, or you have a different question, a post to the general [Channels Community](https://community.getchannels.com/){:target="_blank"} will be answered
 
 ## Instructions
+
 ### Prerequisites
 
 * [Channels DVR Server](https://getchannels.com){:target="_blank"}
-* HDMI / HDCP capable Video encoder (you can go network, or PC capture)
-
-  I went with this: 
-  [URayCoder 4K 4 Channels HDMI IP Video Streaming Encoder](https://www.amazon.com/URayCoder-Cost-Effective-Streaming-Broadcast-Transmitter/dp/B07TKMPCZH){:target="_blank"}
+* HDMI / HDCP capable Video encoder (you can go network, or PC capture)[^1]
 * 1 or more Android based video streaming stick / puck.
-
   I went with this:
   [ONN Android TV 4K UHD Streaming Device](https://www.amazon.com/gp/product/B0B75QMC7X){:target="_blank"}
 * Knowledge of Docker and Machine to host [bnhf/ah4c](https://hub.docker.com/r/bnhf/ah4c){:target="_blank"} docker 
   container
+
 ### Steps
-The steps below are going to be for the Network encoder / ONN device that I purchased -- recording YouTube TV, you might have to 
-tweak some of these things for your specific configuration.
+
+The steps below are going to be for the Network encoder / ONN device that I purchased -- recording YouTube TV, you might have to tweak some of these things for your specific configuration.
 
 1. Set up the URay Encoder
-   * Plug in the Network Transcoder to Ethernet, and Power and get the IP
-   * Ideally set it static in your router -- make a note of your IP
-     * Follow the quickstart in the guide for your URayEncoder -- I set mine to use DHCP, then made 
-       the IP static in my router
+    * Plug in the Network Transcoder to Ethernet, and Power and get the IP
+    * Ideally set it static in your router -- make a note of your IP
+    !!! info 
+        Follow the quickstart in the guide for your URayEncoder -- I set mine to use DHCP, then made 
+        the IP static in my router
      
 2. Set up the Android ONN Device
-   * Plug in the ONN device's HDMI to input 1 of the encoder
-   * Plug in the power
-   * Use VLC to view the stream (instructions for this are in the URay Quick Start guide)
-   * Follow the prompts to configure your device (you can go with Wi-Fi, or if you want, you can 
-     purchase an Ethernet adapter for the device).
-   * Download / install any updates that the device needs now
-   * Find your device in your router, and give it a static IP.
-   * Finish installing / logging in to any apps you're interested in recording, I'll focus on 
-     Youtube TV here
-   * [Enable Developer Mode](https://developer.android.com/training/tv/start/start#:~:text=On%20your%20TV%20device%2C%20navigate,Return%20to%20Settings.){:target="_blank"}
-   * Under the (new) developer menu:
-     * change all animation durations to 'zero'
-     * Enable USB Debugging
-     * Toggle 'Stay Awake' to on
-   * Under Power and Energy set to **never** Automatically Turn Off
+     * Plug in the ONN device's HDMI to input 1 of the encoder
+     * Plug in the power
+     * Use VLC to view the stream (instructions for this are in the URay Quick Start guide)
+     * Follow the prompts to configure your device (you can go with Wi-Fi, or if you want, you can 
+       purchase an Ethernet adapter for the device).
+     * Download / install any updates that the device needs now
+     * Find your device in your router, and give it a static IP.
+     * Finish installing / logging in to any apps you're interested in recording, I'll focus on 
+       Youtube TV here
+     * [Enable Developer Mode](https://developer.android.com/training/tv/start/start#:~:text=On%20your%20TV%20device%2C%20navigate,Return%20to%20Settings.){:target="_blank"}
+     * Under the (new) developer menu:
+       * change all animation durations to 'zero'
+       * Enable USB Debugging
+       * Toggle 'Stay Awake' to on
+     * Under Power and Energy set to **never** Automatically Turn Off
 
 3. Install the docker container
 
-   _I use [Portainer](https://portainer.io){:target="_blank"}, but you can use any method that you're comfortable 
-   with for deploying 
-   docker stacks_
-   * Here is the docker_compose yaml that I used (thanks bnhf):
+    !!! tip
+
+        I use [Portainer](https://portainer.io){:target="_blank"}, but you can use any method that you're comfortable with for deploying docker stacks
+
+    Here is the docker_compose yaml that I used (thanks bnhf):
 
     ```yaml
     version: '3.9'
@@ -125,7 +127,8 @@ tweak some of these things for your specific configuration.
           - /data/ah4c/adb:/root/.android # Persistent data directory for adb keys
         restart: unless-stopped
     ```
-   * And for me here are the environment variables:
+   
+    And for me here are the environment variables:
  
     ```.dotenv
     IPADDRESS=192.168.1.128:7654
@@ -137,51 +140,47 @@ tweak some of these things for your specific configuration.
     STREAMER_APP=scripts/onn/youtubetv
     ```
    
-   * Run the docker container
-   * Use VLC to connect to your device's stream, use your remote to accept any prompts on your device.  (mine asked if I wanted to allow USB Debugging Connection, I checked 'Always Allow')
-   * Look for any other errors, if you experience any errors that you're not sure how to fix, please post a message in the 
-[HDMI Channels](https://community.getchannels.com/t/hdmi-for-channels/36302){:target="_blank"} thread in the Channels Community.
-   * Once you've run the container you can stop it, and edit the files in your /data/ah4c directory
+    * Run the docker container
+    * Use VLC to connect to your device's stream, use your remote to accept any prompts on your device.  (mine asked if I wanted to allow USB Debugging Connection, I checked 'Always Allow')
+    * Look for any other errors, if you experience any errors that you're not sure how to fix, please post a message in the [HDMI Channels](https://community.getchannels.com/t/hdmi-for-channels/36302){:target="_blank"} thread in the Channels Community.
+    * Once you've run the container you can stop it, and edit the files in your /data/ah4c directory
 
 4. Edit the scripts
-   * Here are the scripts I had to edit for YouTube TV:
-   
-`./scripts/onn/youtubetv/prebmitune.sh`:
-```shell
-IPADD=$1
-IS_ASLEEP=`adb -s $IPADD shell dumpsys display | grep mScreenState=OFF`
-WAKE="input keyevent KEYCODE_WAKEUP"
-HOME="input keyevent KEYCODE_HOME"
-adb connect $IPADD
-# YouTube TV sometimes fails to load video if the app is already open when waking up from sleep.
-if [ $IS_ASLEEP ];
-then
-adb -s $IPADD shell $WAKE; sleep 2
-fi
-
-adb -s $IPADD shell $HOME; sleep 2    
-   ```
-  
-`./scripts/onn/youtubetv/bmitune.sh`:
-
-```shell
-adb -s $2 shell am start -a android.intent.action.VIEW -d https://tv.youtube.com/watch/$1 -n com.google.android.youtube.tvunplugged/com.google.android.apps.youtube.tvunplugged.activity.MainActivity```
-```
-
-`./scripts/onn/youtubetv/stopbmitune.sh` _No changes_.
-
-{:start="5"}
+    * Here are the scripts I had to edit for YouTube TV:
+    `./scripts/onn/youtubetv/prebmitune.sh`:
+    ```bash
+    IPADD=$1
+    IS_ASLEEP=`adb -s $IPADD shell dumpsys display | grep mScreenState=OFF`
+    WAKE="input keyevent KEYCODE_WAKEUP"
+    HOME="input keyevent KEYCODE_HOME"
+    adb connect $IPADD
+    # YouTube TV sometimes fails to load video if the app is already open when waking up from sleep.
+    if [ $IS_ASLEEP ];
+    then
+    adb -s $IPADD shell $WAKE; sleep 2
+    fi
+    
+    adb -s $IPADD shell $HOME; sleep 2    
+    ```
+    `./scripts/onn/youtubetv/bmitune.sh`:
+    ```shell
+    adb -s $2 shell am start -a android.intent.action.VIEW -d https://tv.youtube.com/watch/$1 -n com.google.android.youtube.tvunplugged/com.google.android.apps.youtube.tvunplugged.activity.MainActivity```
+    ```
+    `./scripts/onn/youtubetv/stopbmitune.sh` _No changes_.
+    
 5. Add a custom channel to Channels DVR
-   * Go to your Channels DVR Settings
-   * Add Source
-   * Custom Channel
-     * Nickname: `YouTube TV` (or whatever you want)
-     * Stream Format: `MPEG-TS` (unless you changed it from the defaults with your encoder)
-     * Source: `URL | http://<ipaddress>:7654/m3u/youtubetv.m3u`
-   * Save
+    * Go to your Channels DVR Settings
+        * Add Source
+        * Custom Channel
+            * Nickname: `YouTube TV` (or whatever you want)
+            * Stream Format: `MPEG-TS` (unless you changed it from the defaults with your encoder)
+            * Source: `URL | http://<ipaddress>:7654/m3u/youtubetv.m3u`
+        * Save
 6. Go to your guide and check to see if any of the default channels worked.
 7. Configuring your YouTube TV Channels!
 
 This was actually the tricky part for me, ymmv
 
 Next blog post will be on getting YouTube TV channel ID's for the m3u!
+
+[^1]: My encoder of choice: [URayCoder 4K 4 Channels HDMI IP Video Streaming Encoder](https://www.amazon.com/URayCoder-Cost-Effective-Streaming-Broadcast-Transmitter/dp/B07TKMPCZH){:target="_blank"}
