@@ -6,7 +6,6 @@ categories:
 date:
   created: 2023-03-03
 description: How to use Shortcuts to make Things 3 reminders TZ aware
-draft: true
 tags:
   - things3
   - shortcuts
