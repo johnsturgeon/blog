@@ -103,7 +103,7 @@ def main():
 
                 if new_content:
                     # Fixing the path for new_root
-                    new_root = root.replace("./myblog/_posts", "./docs/drafts")
+                    new_root = root.replace("./myblog/old_jekyll_posts", "./docs/drafts")
                     os.makedirs(new_root, exist_ok=True)
                     with open(
                         os.path.join(new_root, filename), "w", encoding="utf-8"
