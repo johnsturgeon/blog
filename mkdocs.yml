@@ -1,0 +1,79 @@
+# yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
+site_name: John Sturgeon
+site_description: >- 
+  Retired software engineer, contributor to open source projects when I can.
+  Working on way too many projects and hobbies, and making notes here along the way.
+site_url: https://newblog.johnsturgeon.me/
+site_author: johnsturgeon
+theme:
+  name: material
+  features:
+    - navigation.indexes
+    - content.code.annotation
+    - content.code.copy
+  palette:
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: white
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+plugins:
+  - search:
+  - tags:
+  - blog:
+      blog_dir: .
+      blog_toc: true
+      post_dir: "{blog}/posts"
+      post_url_format: "{date}/{slug}"
+  - rss:
+      match_path: blog/posts/.*
+      date_from_meta:
+        as_creation: date
+      use_git: false
+  - tags:
+      tags_file: tags.md
+extra:
+  social:
+    - icon: fontawesome/brands/mastodon
+      link: https://mastodon.social/@johnsturgeon
+      name: JohnSturgeon on Mastodon
+    - icon: fontawesome/brands/github
+      link: https://github.com/johnsturgeon
+      name: John's Github Profile
+    - icon: fontawesome/brands/reddit
+      link: https://www.reddit.com/user/johnsturgeon
+      name: John's Reddit
+
+markdown_extensions:
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - footnotes
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - admonition
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
