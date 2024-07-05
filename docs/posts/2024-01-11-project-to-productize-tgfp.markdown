@@ -14,6 +14,7 @@ tags:
   - football
   - fastapi
 slug: project-to-productize-tgfp
+comments: true
 ---
 
 # Making The Great Football Pool a Turnkey Product

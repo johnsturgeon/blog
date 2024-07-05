@@ -11,6 +11,7 @@ tags:
   - python
   - linux
 slug: python-script-as-service
+comments: true
 ---
 
 # Running a Python Script from systemd

@@ -12,6 +12,7 @@ tags:
   - plexamp
   - python
 slug: plex-tools
+comments: true
 ---
 
 # Plex Tools (python plex api)

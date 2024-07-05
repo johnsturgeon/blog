@@ -10,6 +10,7 @@ tags:
   - python
   - discord
 slug: discord-bot-healthcheck
+comments: true
 ---
 
 # Discord.py bot Uptime with Healthchecks.io

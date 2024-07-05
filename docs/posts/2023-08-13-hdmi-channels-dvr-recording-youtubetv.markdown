@@ -12,6 +12,7 @@ tags:
   - channels
   - dvr
 slug: hdmi-channels-dvr-recording-youtubetv
+comments: true
 ---
 
 # Capture HDMI to Channels DVR

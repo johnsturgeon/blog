@@ -11,6 +11,7 @@ description: I'm going to migrate all of my old blog posts (slowly) over to this
 tags:
   - jekyll
   - mkdocs
+comments: true
 ---
 
 # Bringing old blog posts over to new blog

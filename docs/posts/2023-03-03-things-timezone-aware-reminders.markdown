@@ -11,6 +11,7 @@ tags:
   - things3
   - shortcuts
 slug: things-timezone-aware-reminders
+comments: true
 ---
 
 # Things 3: Hacking my way to TZ aware reminders

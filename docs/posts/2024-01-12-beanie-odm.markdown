@@ -12,6 +12,7 @@ tags:
   - python
   - mongodb
 slug: beanie-odm
+comments: true
 ---
 
 # Using Beanie ODM
