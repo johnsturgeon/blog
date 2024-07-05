@@ -40,6 +40,11 @@ plugins:
       blog_toc: true
       post_dir: "{blog}/posts"
       post_url_format: "{date}/{slug}"
+  - rss:
+      match_path: blog/posts/.*
+      date_from_meta:
+        as_creation: date
+      use_git: true
   - tags:
       tags_file: tags.md
 extra:
