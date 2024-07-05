@@ -1,24 +1,21 @@
 # johnsturgeon.me
 
-This contains the Jekyll files for my personal blog.
+This contains the MkDocs files for my personal blog.
 
 It's published to cloudflare pages
 
 To preview locally:
 
 ```bash
-cd myblog
-bundle exec jekyll serve
+mkdocs serve
 ```
 
 To deploy:
 
 ```bash
-cd myblog
-bundle exec jekyll build
 git add .
 git commit -m "Some message here"
 git push
 ```
 
-A cloudflare page worker will build the jekyll site and publish it.
+A cloudflare page worker will build the mkdocs site and publish it.
