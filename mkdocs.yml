@@ -44,7 +44,7 @@ plugins:
       match_path: blog/posts/.*
       date_from_meta:
         as_creation: date
-      use_git: true
+      use_git: false
   - tags:
       tags_file: tags.md
 extra:
