@@ -155,9 +155,8 @@ The steps below are going to be for the Network encoder / ONN device that I purc
     HOME="input keyevent KEYCODE_HOME"
     adb connect $IPADD
     # YouTube TV sometimes fails to load video if the app is already open when waking up from sleep.
-    if [ $IS_ASLEEP ];
-    then
-    adb -s $IPADD shell $WAKE; sleep 2
+    if [ $IS_ASLEEP ] ; then
+        adb -s $IPADD shell $WAKE; sleep 2
     fi
     
     adb -s $IPADD shell $HOME; sleep 2    
@@ -180,7 +179,5 @@ The steps below are going to be for the Network encoder / ONN device that I purc
 7. Configuring your YouTube TV Channels!
 
 This was actually the tricky part for me, ymmv
-
-Next blog post will be on getting YouTube TV channel ID's for the m3u!
 
 [^1]: My encoder of choice: [URayCoder 4K 4 Channels HDMI IP Video Streaming Encoder](https://www.amazon.com/URayCoder-Cost-Effective-Streaming-Broadcast-Transmitter/dp/B07TKMPCZH){:target="_blank"}
