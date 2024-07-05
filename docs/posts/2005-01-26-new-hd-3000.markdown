@@ -1,0 +1,21 @@
+---
+authors:
+  - johnsturgeon
+categories:
+  - HDTV
+date:
+  created: 2005-01-26
+description: New HD Capture card HD-3000
+tags:
+  - hdtv
+  - mythtv
+  - htpc
+---
+
+# New HD-3000
+
+A few friends and I have taken a leap. We are putting together an order of 8 HD-3000 High Definition recording cards before the famous Broadcast Flag stuff becomes Law (June?).  
+
+<!-- more -->
+
+Right now, each of us are ordering two each, and I plan on eventually building a separate backend with at least .5 Terabytes of storage. I still plan on transcoding to smaller resolution, but long term, I think the idea is to build enough disk space and tweak my front end to be able to play HDTV natively without the transcoding mess.

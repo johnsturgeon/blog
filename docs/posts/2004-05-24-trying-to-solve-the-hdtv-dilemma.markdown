@@ -3,7 +3,6 @@ authors:
   - johnsturgeon
 date:
   created: 2004-05-24
-draft: true
 ---
 
 # Trying to solve the HDTV dilemma

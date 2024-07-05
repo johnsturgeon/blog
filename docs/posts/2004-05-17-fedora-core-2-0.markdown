@@ -6,7 +6,6 @@ categories:
 date:
   created: 2004-05-17
 description: Upgrade to FC 2.0 might solve HDTV woes
-draft: true
 tags:
   - hdtv
   - linux

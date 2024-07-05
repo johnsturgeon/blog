@@ -1,0 +1,14 @@
+---
+authors:
+  - johnsturgeon
+categories:
+  - Mythtv
+date:
+  created: 2005-04-27
+tags:
+  - mythtv
+---
+
+# Update to 0.18
+
+I'm looking forward to getting some time to update from 0.17 to 0.18 of MythTV. Chris Pinkham updated some mythtranscode bits to help us pcHDTV folks.

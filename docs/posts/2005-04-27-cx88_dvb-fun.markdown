@@ -1,0 +1,22 @@
+---
+authors:
+  - johnsturgeon
+categories:
+  - Mythtv
+date:
+  created: 2005-04-27
+tags:
+  - linux
+  - mythtv
+---
+
+# cx88_dvb fun
+
+I use MythTV (atrpms) with the pcHDTV HD-3000 card. I downloaded the 2.0 driver and compiled, and, as per the instructions, attempted to modprobe the cx88\_dvb driver. I kept getting kernal errors, module mis-match errors, and on and on. Finally, after a few re-boots, rearranging of modules, etc... I got it to work. The unfortunate thing is that I really have no idea what I did, so writing up a how-to would be impossible.  
+<!-- more -->
+
+The along comes a friend of mine and he has the same exact problems. After futzing with his system for two hours, I suggested that we get my pcHDTV bits, and simply do a 'make install', then modprobe cx88\_dvb. Guess what. It worked. So, I have no idea what magic exists inside my driver bits, but [here they are](http://www.sturgeonfamily.org/files/pcHDTV-2.0.tar){:target="_blank"} for anybody else who wants to try. Simply extract the tar file to a directory and (as root) type `make install` then `modprobe cx88_dvb`.  
+  
+On another note, You need to make sure that your dvb device files are configured properly, and the permissions are correct. So I'm attaching my files in [/etc/udev/rules.d/10-pchdtv.rules](http://www.sturgeonfamily.org/files/10-pchdtv.rules){:target="_blank"} and [/etc/udev/permissions.d/10-pchdtv.permissions](http://www.sturgeonfamily.org/files/10-pchdtv.permissions){:target="_blank"}
+  
+Hope this helps **somebody**
