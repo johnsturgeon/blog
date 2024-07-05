@@ -11,6 +11,7 @@ tags:
   - tgfp
   - python
   - mongodb
+slug: beanie-odm
 ---
 
 # Using Beanie ODM

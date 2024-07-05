@@ -10,6 +10,7 @@ tags:
   - plex
   - plexamp
   - python
+slug: plex-tools
 ---
 
 # Plex Tools (python plex api)

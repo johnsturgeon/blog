@@ -11,6 +11,7 @@ tags:
   - proxmox
   - homelab
   - linux
+slug: proxmox-install-steps
 ---
 
 # Proxmox VE Install on Dell R430

@@ -10,6 +10,7 @@ description: Basic instructions for adding your python script to systemd for lon
 tags:
   - python
   - linux
+slug: python-script-as-service
 ---
 
 # Running a Python Script from systemd

@@ -13,6 +13,7 @@ tags:
   - python
   - football
   - fastapi
+slug: project-to-productize-tgfp
 ---
 
 # Making The Great Football Pool a Turnkey Product

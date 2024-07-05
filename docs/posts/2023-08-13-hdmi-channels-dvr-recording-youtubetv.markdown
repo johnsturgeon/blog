@@ -11,6 +11,7 @@ description: How to capture HDMI output of Android TV for use in Channels DVR
 tags:
   - channels
   - dvr
+slug: hdmi-channels-dvr-recording-youtubetv
 ---
 
 # HDMI -> Channels DVR

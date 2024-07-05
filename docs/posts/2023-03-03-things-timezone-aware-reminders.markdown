@@ -9,6 +9,7 @@ description: How to use Shortcuts to make Things 3 reminders TZ aware
 tags:
   - things3
   - shortcuts
+slug: things-timezone-aware-reminders
 ---
 
 # Things 3: Hacking my way to TZ aware reminders
