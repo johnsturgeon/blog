@@ -9,6 +9,7 @@ description: Tutorial for discord.py bot uptime healthcheck using healthcheck.io
 tags:
   - python
   - discord
+slug: discord-bot-healthcheck
 ---
 
 # Discord.py bot Uptime with Healthcheck
