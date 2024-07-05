@@ -10,6 +10,7 @@ draft: true
 
 I have a basic dilemma in regard to HDTV. I can capture this amazingly high quality video (1920x1080), 
 but cannot play it back on my system. I have a few choices here:  
+<!-- more -->
 
 1. Get a faster system (no way)  
 2. Wait until all of this XvMC, nVidia driver, MythTV HDTV Patches to CVS version 0.15 stuff works itself out  

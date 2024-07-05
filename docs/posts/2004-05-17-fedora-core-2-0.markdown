@@ -1,0 +1,17 @@
+---
+authors:
+  - johnsturgeon
+categories:
+  - HDTV
+date:
+  created: 2004-05-17
+description: Upgrade to FC 2.0 might solve HDTV woes
+draft: true
+tags:
+  - hdtv
+  - linux
+---
+
+# Fedora Core 2.0
+
+It looks like Fedora Core 2.0 is out, and I've heard that HDTV playback is significantly improved with Linux kernel 2.6. I think my next step is to create another partition and install FC 2.0 and try to get this thing going again from the ground up.

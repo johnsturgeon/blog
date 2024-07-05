@@ -6,7 +6,6 @@ categories:
 date:
   created: 2004-05-14
 description: Installing a good HDTV antenna
-draft: true
 tags:
   - hdtv
 ---
@@ -15,7 +14,7 @@ tags:
 
 In my continued quest to create a completely usable HDTV tuner, I am getting closer. 
 Tonight, I have a 'cable guy' coming over to install my UHF attic antenna. 
-At first I (naively) thought that I could do it, but going up two stories, drilling, 
+At first, I (naively) thought that I could do it, but going up two stories, drilling, 
 wiring, cabling, and digging through mountains of attic insulation is not my cup of tea.  
   
 Once the attic antenna is installed, I should be able to get a reliable DTV signal, 
