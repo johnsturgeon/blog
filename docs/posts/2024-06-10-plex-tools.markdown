@@ -5,6 +5,7 @@ categories:
   - Plex
 date:
   created: 2024-06-10
+title: Introducing Plex Tools!
 description: Introduction Plex Song De-Dupe tool
 tags:
   - plex

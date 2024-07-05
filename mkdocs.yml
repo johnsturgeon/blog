@@ -11,6 +11,9 @@ theme:
     - navigation.indexes
     - content.code.annotation
     - content.code.copy
+  custom_dir: overrides
+  icon:
+    logo: logo-no-background-path-small
   palette:
     # Palette toggle for automatic mode
     - media: "(prefers-color-scheme)"
@@ -29,12 +32,16 @@ theme:
     # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
+      logo: assets/images/logo-no-background-white.png
       toggle:
         icon: material/brightness-4
         name: Switch to system preference
 plugins:
-  - search:
-  - tags:
+  - search
+  - social:
+      cards_layout_options:
+        color: "#1c4b82"
+  - tags
   - blog:
       blog_dir: .
       blog_toc: true

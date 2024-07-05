@@ -3,10 +3,10 @@ authors:
   - johnsturgeon
 categories:
   - Howto
-  - Channels
   - Hdtv
 date:
   created: 2023-08-13
+title: Capture HDMI to Channels DVR
 description: How to capture HDMI output of Android TV for use in Channels DVR
 tags:
   - channels
@@ -14,7 +14,7 @@ tags:
 slug: hdmi-channels-dvr-recording-youtubetv
 ---
 
-# HDMI -> Channels DVR
+# Capture HDMI to Channels DVR
 
 ## Summary
 

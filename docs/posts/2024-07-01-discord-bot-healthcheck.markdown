@@ -12,7 +12,7 @@ tags:
 slug: discord-bot-healthcheck
 ---
 
-# Discord.py bot Uptime with Healthcheck
+# Discord.py bot Uptime with Healthchecks.io
 
 Sometimes you are running a discord bot using `discord.py` (python library) and it goes offline.  Sure would be nice to know right?
 

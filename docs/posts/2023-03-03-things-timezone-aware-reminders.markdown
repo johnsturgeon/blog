@@ -5,6 +5,7 @@ categories:
   - Howto
 date:
   created: 2023-03-03
+title: TZ Aware Reminders in Things 3
 description: How to use Shortcuts to make Things 3 reminders TZ aware
 tags:
   - things3
@@ -13,6 +14,7 @@ slug: things-timezone-aware-reminders
 ---
 
 # Things 3: Hacking my way to TZ aware reminders
+
 I ran across [this question posted](https://www.reddit.com/r/thingsapp/comments/11gbrhb/i_cant_believe_this_app_doesnt_handle_timezones/){:target="_blank"} in the [r/thingsapp](https://www.reddit.com/r/thingsapp/){:target="_blank"} subreddit.  The crux of the question was how to handle the case where you set your reminder for a task in Things 3 in one timezone, but need it to be TZ aware in your new Timezone.
 
 <!-- more -->
