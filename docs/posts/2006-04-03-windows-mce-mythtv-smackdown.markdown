@@ -5,7 +5,7 @@ categories:
   - Howto
 date:
   created: 2006-04-03
-description: Washington post article about MythTV
+description: Bruce Shankle compares mythtv to windows MCE
 tags:
   - python
   - linux
