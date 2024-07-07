@@ -2,13 +2,12 @@
 authors:
   - johnsturgeon
 categories:
-  - Howto
+  - MythTV
 date:
   created: 2006-03-28
 description: Washington post article about MythTV
 tags:
-  - python
-  - linux
+  - mythtv
 ---
 
 # Washington Post write-up on MythTV

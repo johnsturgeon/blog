@@ -2,13 +2,12 @@
 authors:
   - johnsturgeon
 categories:
-  - Howto
+  - MythTV
 date:
   created: 2006-04-03
 description: Bruce Shankle compares mythtv to windows MCE
 tags:
-  - python
-  - linux
+  - mythtv
 ---
 
 # Windows MCE, MythTV Smack down...

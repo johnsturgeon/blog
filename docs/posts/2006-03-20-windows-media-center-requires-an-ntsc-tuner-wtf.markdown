@@ -3,7 +3,6 @@ authors:
   - johnsturgeon
 categories:
   - Mythtv
-  - HDTV
 date:
   created: 2006-03-20
 tags:
