@@ -10,6 +10,7 @@ date:
 ---
 
 # Center for Social Media releases Fair Use booklet
+
 Joshua Paul blogged about Fair Use over at O'Reilly Digital Media. I jumped over to [the link](http://www.centerforsocialmedia.org/fairuse.htm){:target="_blank"} he mentions in his blog and found a wonderful description (and an 8-page booklet with more detail) of Fair use.  
 
 <!-- more -->
