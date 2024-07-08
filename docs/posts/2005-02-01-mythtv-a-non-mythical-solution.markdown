@@ -3,6 +3,10 @@ authors:
   - johnsturgeon
 date:
   created: 2005-02-01
+categories:
+  - MythTV
+tags:
+  - mythtv
 ---
 
 # MythTV ... a non-mythical solution

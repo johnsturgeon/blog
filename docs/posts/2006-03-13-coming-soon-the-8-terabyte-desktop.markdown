@@ -3,6 +3,10 @@ authors:
   - johnsturgeon
 date:
   created: 2006-03-13
+categories:
+  - HDTV
+tags:
+  - hdtv
 ---
 
 # Coming soon: The  8-terabyte desktop

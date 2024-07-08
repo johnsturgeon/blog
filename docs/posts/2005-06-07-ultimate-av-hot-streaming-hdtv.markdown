@@ -3,6 +3,10 @@ authors:
   - johnsturgeon
 date:
   created: 2005-06-07
+categories:
+  - HDTV
+tags:
+  - hdtv
 ---
 
 # Ultimate AV: Hot Streaming HDTV

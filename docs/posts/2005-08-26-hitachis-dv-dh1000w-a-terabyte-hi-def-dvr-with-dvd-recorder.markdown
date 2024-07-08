@@ -3,6 +3,10 @@ authors:
   - johnsturgeon
 date:
   created: 2005-08-26
+categories:
+  - HDTV
+tags:
+  - hdtv
 ---
 
 # Hitachi’s DV-DH1000W, a terabyte hi-def DVR with DVD recorder

@@ -3,6 +3,11 @@ authors:
   - johnsturgeon
 date:
   created: 2004-05-24
+categories:
+  - HDTV
+tags:
+  - hdtv
+  - mythtv
 ---
 
 # Trying to solve the HDTV dilemma

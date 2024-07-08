@@ -7,7 +7,7 @@ date:
 
 # The Future of Television?
 
-Andrew Turner on High Earth Orbit has written a [nice essay](http://highearthorbit.com/index.php?p=147){:target="_blank"} on the future of television.   
+Andrew Turner on High Earth Orbit has written a [nice essay](https://web.archive.org/web/20050426002451/http://highearthorbit.com/index.php?p=147){:target="_blank"} (archive link) on the future of television.   
 <!-- more -->
 
 !!! quote "Here is an excerpt:"

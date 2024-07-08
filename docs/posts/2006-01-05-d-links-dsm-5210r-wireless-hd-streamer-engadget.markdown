@@ -3,6 +3,10 @@ authors:
   - johnsturgeon
 date:
   created: 2006-01-05
+categories:
+  - HDTV
+tags:
+  - hdtv
 ---
 
 # D-Link's DSM-5210R Wireless HD streamer - Engadget

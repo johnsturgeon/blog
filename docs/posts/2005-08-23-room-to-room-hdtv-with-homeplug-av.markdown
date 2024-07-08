@@ -3,6 +3,10 @@ authors:
   - johnsturgeon
 date:
   created: 2005-08-23
+categories:
+  - HDTV
+tags:
+  - hdtv
 ---
 
 # Room to room HDTV with HomePlug AV

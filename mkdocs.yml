@@ -9,6 +9,7 @@ theme:
   name: material
   features:
     - navigation.indexes
+    - navigation.footer
     - content.code.annotation
     - content.code.copy
   custom_dir: overrides
